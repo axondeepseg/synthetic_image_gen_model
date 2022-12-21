@@ -17,5 +17,4 @@ The sequence to train the model/load a checkpoint is:
 | 5 | cgan_tem_model.py  |  Train the generative model  |
 
 </br>
-
-
+The results folder contains some generated sample along with segmentation of the generated samples.
