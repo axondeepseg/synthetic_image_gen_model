@@ -12,7 +12,7 @@ The sequence to train the model/load a checkpoint is:
 | :---:   | :---: | :---: |
 | 1 | tem_preprocessor.py  | Divides the dataset into train and val |
 | 2 | split_rename.py  | Splits the input(TEM) into 18 tiles  |
-| 3 | split_rename.py  | Splits the input(SEM) |
+| 3 | sem_dets.py  | Splits the input(SEM) |
 | 4 | combine_A_and_B.py  | From the original pix_2_pix git repo  |
 | 5 | cgan_tem_model.py  |  Train the generative model  |
 
