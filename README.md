@@ -3,7 +3,7 @@
 High-resolution pathology images of axons and myelin are used to observe demyelination on neurons. These images are captured through an electron microscope. Different types of microscopy reflect different properties on the neurons and are known as contrasts. The two main contrasts are known as Transmission EM (TEM) and Scanning EM (SEM). This project aims to perform unpaired image-to-image translation from one contrast to another to increase our overall training dataset. We implement various models such as CGANs and DDPM to achieve translation.
 </br>
 </br>
-##Data
+## Data
 The data used in this project is the ```data_axondeepseg_tem``` and ```data_axondeepseg_sem```datasets privately hosted on the Neuropoly server with git-annex. ```data_axondeepseg_tem``` contains 20 subjects of TEM images used for axon-myelin segmentation. ```data_axondeepseg_sem``` contains 8 subjects of SEM images used for axon-myelin segmentation.
 </br>
 These images are further processed into 64x64 tiles for training. Information on processing is described in detail below. 
@@ -16,7 +16,7 @@ Conditional GAN is a type of GAN that uses labels to aid in training are generat
 </br>
 While these models are used to generate synthetic data they can also aid in image-to-image transition. The implemented model is known as pix2pix where the generator used is a U-Net model and the discriminator is a convolutional PatchGAN. 
 </br>
-This model is implemented with further instruction in the README in the ```cgan``` folder.
+This model is implemented with further instruction in the README in the ```cgan``` folder with model checkpoints available in ```v1.0```assets.
 </br>
 </br>
 ### Denoising Diffusion Probabilistic Models (DDPM)
@@ -26,4 +26,4 @@ DDPM is a diffusion-based model which executes the idea of discrete denoising to
 2. Reverse or Sampling Process: Neural network is trained to  recover the original data by de-noising the images. Training occurs in this process, learning the probability distribution of the domain.
 </br>
 
-Reproduction of this model is described in the README in the ```diffusion``` folder.
+Reproduction of this model is described in the README in the ```diffusion``` folder with model checkpoints available in ```v2.0```assets.
