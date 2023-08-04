@@ -207,20 +207,19 @@ def translate_im():
 
 if __name__ == '__main__':
     # launch()
+    #Loads TEM model and generates synthetic images
+    device = "cuda"
+    logger.log(f"Sampling Model...")
+    run_name = "DDPM_Uncondtional_TEM_Epoch_2_lr_1e-4_test"
+    setup_logging_sample(run_name)
+    model = UNet().to(device)
+    ckpt = torch.load("models/DDPM_Uncondtional_TEM_Epoch_900_lr_1e-4/ckpt.pt")
+    model.load_state_dict(ckpt)
+    diffusion = Diffusion(img_size=64, device=device)
+    c = 0
+    for i in range(20):
+        x = diffusion.sample(model, 1)
+        c = i + 10
+        save_images(x, os.path.join("results", run_name, f"{c}.jpg"))
 
-    # device = "cuda"
-    # logger.log(f"Sampling Model...")
-    # run_name = "DDPM_Uncondtional_TEM_Epoch_2_lr_1e-4_test"
-    # setup_logging_sample(run_name)
-    # model = UNet().to(device)
-    # # ckpt = torch.load("./working/orig/ckpt.pt")
-    # ckpt = torch.load("models/DDPM_Uncondtional_TEM_Epoch_2_lr_1e-4/ckpt.pt")
-    # model.load_state_dict(ckpt)
-    # diffusion = Diffusion(img_size=64, device=device)
-    # for i in range(20):
-    #     x = diffusion.sample(model, 1)
-    #     c = i + 10
-    #     save_images(x, os.path.join("results", run_name, f"{c}.jpg"))
-
-    translate_im()
     
