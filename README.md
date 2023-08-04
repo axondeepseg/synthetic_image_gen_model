@@ -16,6 +16,7 @@ Conditional GAN is a type of GAN that uses labels to aid in training are generat
 </br>
 While these models are used to generate synthetic data they can also aid in image-to-image transition. The implemented model is known as pix2pix where the generator used is a U-Net model and the discriminator is a convolutional PatchGAN. 
 </br>
+</br>
 This model is implemented with further instruction in the README in the ```cgan``` folder with model checkpoints available in ```v1.0```assets.
 </br>
 </br>
@@ -25,5 +26,5 @@ DDPM is a diffusion-based model which executes the idea of discrete denoising to
 1. Forward Process: The training image has Gaussian noise added over a series of timesteps until it contains 100% Gaussian noise. These noisy images are targets for the neural network. </br>
 2. Reverse or Sampling Process: Neural network is trained to  recover the original data by de-noising the images. Training occurs in this process, learning the probability distribution of the domain.
 </br>
-
+</br>
 Reproduction of this model is described in the README in the ```diffusion``` folder with model checkpoints available in ```v2.0```assets.
