@@ -14,7 +14,7 @@ To preprocess images, the following steps are defined below:
 3. Split the images into 64 x 64 tiles and rename them for easier processing.
    - Splitting TEM images
    ```
-   python split_rename.py
+   python tem_split_rename.py
    ```
    - Splitting SEM images
    ```
