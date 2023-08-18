@@ -6,7 +6,7 @@ High-resolution pathology images of axons and myelin are used to observe demyeli
 ## Data
 The data used in this project is the ```data_axondeepseg_tem``` and ```data_axondeepseg_sem```datasets privately hosted on the Neuropoly server with git-annex. ```data_axondeepseg_tem``` contains 20 subjects of TEM images used for axon-myelin segmentation. ```data_axondeepseg_sem``` contains 8 subjects of SEM images used for axon-myelin segmentation.
 </br>
-These images are further processed into 64x64 tiles for training. Information on processing is described in detail in the `preprocessing` folder. 
+These images are further processed into 64x64 tiles for training. Instructions on processing is described in detail in the `preprocessing` folder. 
 </br>
 </br>
 ## Models
