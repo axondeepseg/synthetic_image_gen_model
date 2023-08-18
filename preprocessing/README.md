@@ -7,10 +7,11 @@ To preprocess images, the following steps are defined below:
    ```
    conda activate ads_venv
    ```
-2. Extract data and their ground truth and places them in folders A (Ground Truth) and B (Orginal Subject) along with dividing it into training and validation.
+2. Extract data and their ground truth and places them in folders `A` (Ground Truth) and `B` (Orginal Subject) along with dividing it into training and validation.
    ```
    python tem_preprocessor.py
    ```
+   A new folder called `data_tem` containing folders `A` and `B` is created, to change the name of this folder go to lines `64` and `65` and change the name.
 3. Split the images into 64 x 64 tiles and rename them for easier processing.
    - Splitting TEM images
    ```
@@ -20,7 +21,7 @@ To preprocess images, the following steps are defined below:
    ```
    python sem_split_rename.py
    ```
-5. Combine GT with the original image into images of size 64 x 128 pixels into a new folder created called "AB".
+4. Combine GT with the original image into images of size 64 x 128 pixels into a new folder created called "AB".
    ```
    python combine_A_and_B.py
    ```
