@@ -25,6 +25,5 @@ DDPM is a diffusion-based model which executes the idea of discrete denoising to
 </br>
 1. Forward Process: The training image has Gaussian noise added over a series of timesteps until it contains 100% Gaussian noise. These noisy images are targets for the neural network. </br>
 2. Reverse or Sampling Process: Neural network is trained to  recover the original data by de-noising the images. Training occurs in this process, learning the probability distribution of the domain.
-</br>
-</br>
+
 Reproduction of this model is described in the README in the `diffusion` folder with model checkpoints available in `v2.0` assets.
