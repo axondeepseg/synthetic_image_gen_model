@@ -41,8 +41,8 @@ def split_rename_images(directory):
     os.chdir(operating_dir)
 
 def main():
-    path_at, path_av = 'data_tem1/A/train', 'data_tem1/A/val'
-    path_bt, path_bv = 'data_tem1/B/train', 'data_tem1/B/val'
+    path_at, path_av = 'data_tem/A/train', 'data_tem/A/val'
+    path_bt, path_bv = 'data_tem/B/train', 'data_tem/B/val'
     for d in [path_at, path_av, path_bt, path_bv]:
         split_rename_images(d)
         print(f'Done with {d}.')
