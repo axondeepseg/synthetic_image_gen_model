@@ -61,8 +61,8 @@ def main():
     print(f'{sample_count} samples collected.')
 
     # creating file tree (A for masks, B for images)
-    path_at, path_av = 'data_tem1/A/train', 'data_tem1/A/val'
-    path_bt, path_bv = 'data_tem1/B/train', 'data_tem1/B/val'
+    path_at, path_av = 'data_tem/A/train', 'data_tem/A/val'
+    path_bt, path_bv = 'data_tem/B/train', 'data_tem/B/val'
     [os.makedirs(path) for path in [path_at, path_av, path_bt, path_bv]]
     for subj in subject_dict:
         samples = list(subject_dict[subj].keys())
