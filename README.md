@@ -27,4 +27,4 @@ DDPM is a diffusion-based model which executes the idea of discrete denoising to
 2. Reverse or Sampling Process: Neural network is trained to  recover the original data by de-noising the images. Training occurs in this process, learning the probability distribution of the domain.
 </br>
 </br>
-Reproduction of this model is described in the README in the ```diffusion``` folder with model checkpoints available in ```v2.0```assets.
+Reproduction of this model is described in the README in the `diffusion` folder with model checkpoints available in `v2.0` assets.
